@@ -17,7 +17,6 @@ namespace SriDurgaHariHaraBackend.Api.Controllers
             _service = service;
         }
 
-        // GET: api/company
         [HttpGet("getall")]
         [ProducesResponseType(typeof(IEnumerable<CompanyResponseDto>), 200)]
         public async Task<ActionResult<IEnumerable<CompanyResponseDto>>> GetAll(CancellationToken cancellationToken)
