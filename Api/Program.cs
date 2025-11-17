@@ -35,6 +35,8 @@ builder.Services.AddValidatorsFromAssemblyContaining<InvoiceValidation>();
 
 // Register application/data services as needed
 builder.Services.AddScoped<IInvoiceRepository, InvoiceReadRepo>();
+builder.Services.AddScoped<ICompanyRepository, CompanyRepository>();
+
 
 var app = builder.Build();
 
